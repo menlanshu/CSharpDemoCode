@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleUI", "ConsoleUI\Cons
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DemoLibrary", "DemoLibrary\DemoLibrary.csproj", "{366BBCA8-F264-4E36-9F73-936B00D2493A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EventsDemoUI", "EventsDemoUI\EventsDemoUI.csproj", "{F669E85F-4C21-455D-BD5C-09198308498D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{366BBCA8-F264-4E36-9F73-936B00D2493A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{366BBCA8-F264-4E36-9F73-936B00D2493A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{366BBCA8-F264-4E36-9F73-936B00D2493A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F669E85F-4C21-455D-BD5C-09198308498D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F669E85F-4C21-455D-BD5C-09198308498D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F669E85F-4C21-455D-BD5C-09198308498D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F669E85F-4C21-455D-BD5C-09198308498D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

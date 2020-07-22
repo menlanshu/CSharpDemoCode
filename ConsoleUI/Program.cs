@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using ConsoleUI.Eventsdemo;
 using ConsoleUI.InterfaceDemo;
 using DemoLibrary;
 
@@ -12,7 +13,8 @@ namespace ConsoleUI
     {
         static void Main(string[] args)
         {
-            GenericsDemo.GenericDemoClass.MainTest();
+            EventsDemoClass.MainTest();
+            //GenericsDemo.GenericDemoClass.MainTest();
 
         }
 
