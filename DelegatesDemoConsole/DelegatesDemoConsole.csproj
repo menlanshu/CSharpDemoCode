@@ -4,16 +4,17 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{366BBCA8-F264-4E36-9F73-936B00D2493A}</ProjectGuid>
-    <OutputType>Library</OutputType>
-    <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>DemoLibrary</RootNamespace>
-    <AssemblyName>DemoLibrary</AssemblyName>
+    <ProjectGuid>{4B5C5F13-1108-4EBC-AD23-23E6FD8523E4}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>DelegatesDemoConsole</RootNamespace>
+    <AssemblyName>DelegatesDemoConsole</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -23,6 +24,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
@@ -41,32 +43,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AbstractDemo\IDataAccess.cs" />
-    <Compile Include="AbstractDemo\DataAccess.cs" />
-    <Compile Include="AbstractDemo\SqlDataAccess.cs" />
-    <Compile Include="AbstractDemo\SqliteDataAccess.cs" />
-    <Compile Include="AccessModifierDemo\AccessDemo.cs" />
-    <Compile Include="AccessModifierDemo\BadClass.cs" />
-    <Compile Include="AccessModifierDemo\CallingDemo.cs" />
-    <Compile Include="AccessModifierDemo\InheritFromAccessDemo.cs" />
-    <Compile Include="DelegatesDemo\ProductModel.cs" />
-    <Compile Include="DelegatesDemo\ShoppingCartModel.cs" />
-    <Compile Include="EventsDemo\Account.cs" />
-    <Compile Include="EventsDemo\Customer.cs" />
-    <Compile Include="EventsDemo\OverDraftEventArgs.cs" />
-    <Compile Include="GenericsDemo\Models\LogEntry.cs" />
-    <Compile Include="GenericsDemo\Models\Person.cs" />
-    <Compile Include="GenericsDemo\WithGenerics\GenericTextFileProcessor.cs" />
-    <Compile Include="GenericsDemo\WithoutGenerics\OriginalTextFIleProcessor.cs" />
-    <Compile Include="InterfaceDemo\CourseProductModel.cs" />
-    <Compile Include="InterfaceDemo\CustomerModel.cs" />
-    <Compile Include="InterfaceDemo\DigitalProductModel.cs" />
-    <Compile Include="InterfaceDemo\IDigitalProductModel.cs" />
-    <Compile Include="InterfaceDemo\IProductModel.cs" />
-    <Compile Include="InterfaceDemo\PhysicalProductModel.cs" />
-    <Compile Include="InterfaceDemo\ProductModelBase.cs" />
+    <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
