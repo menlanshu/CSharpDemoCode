@@ -49,6 +49,10 @@
     <Compile Include="AccessModifierDemo\BadClass.cs" />
     <Compile Include="AccessModifierDemo\CallingDemo.cs" />
     <Compile Include="AccessModifierDemo\InheritFromAccessDemo.cs" />
+    <Compile Include="GenericsDemo\Models\LogEntry.cs" />
+    <Compile Include="GenericsDemo\Models\Person.cs" />
+    <Compile Include="GenericsDemo\WithGenerics\GenericTextFileProcessor.cs" />
+    <Compile Include="GenericsDemo\WithoutGenerics\OriginalTextFIleProcessor.cs" />
     <Compile Include="InterfaceDemo\CourseProductModel.cs" />
     <Compile Include="InterfaceDemo\CustomerModel.cs" />
     <Compile Include="InterfaceDemo\DigitalProductModel.cs" />
