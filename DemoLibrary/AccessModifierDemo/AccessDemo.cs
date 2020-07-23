@@ -8,9 +8,6 @@ namespace DemoLibrary
 {
     public class AccessDemo
     {
-        private int _testInt;
-
-
 
         // Private method usage demo test
         private void Demo()

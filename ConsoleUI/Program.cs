@@ -13,7 +13,8 @@ namespace ConsoleUI
     {
         static void Main(string[] args)
         {
-            DelegatesDemo.DelegatesDemoClass.MainTest();
+            Async_Await_Demo.Async_Await_DemoClass.MainTest();
+            //DelegatesDemo.DelegatesDemoClass.MainTest();
             //EventsDemoClass.MainTest();
             //GenericsDemo.GenericDemoClass.MainTest();
 
