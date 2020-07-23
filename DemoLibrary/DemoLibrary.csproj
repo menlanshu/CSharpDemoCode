@@ -49,6 +49,7 @@
     <Compile Include="AccessModifierDemo\BadClass.cs" />
     <Compile Include="AccessModifierDemo\CallingDemo.cs" />
     <Compile Include="AccessModifierDemo\InheritFromAccessDemo.cs" />
+    <Compile Include="Csharp8Demo\1-ReadOnlyMembers.cs" />
     <Compile Include="DelegatesDemo\ProductModel.cs" />
     <Compile Include="DelegatesDemo\ShoppingCartModel.cs" />
     <Compile Include="EventsDemo\Account.cs" />

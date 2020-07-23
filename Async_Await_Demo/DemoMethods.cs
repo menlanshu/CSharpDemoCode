@@ -70,6 +70,9 @@ namespace Async_Await_Demo
             ResultOfDownloadEventHandler(null, results.ToList());
         }
 
+
+        // Create a parallel async version 2 because version 1 use task list to handle all tasks
+        // So the status of each task can not't bee reported
         public static async Task RunDownloadParallelASyncV2(IProgress<ProgressReportModel> progress)
         {
             List<string> websites = PreData();
@@ -121,6 +124,8 @@ namespace Async_Await_Demo
         }
 
 
+        // do download action sequencely, one by one
+        // procedure hang there wait for the result
         public static void RunDownloadSync()
         {
             List<string> websites = PreData();
@@ -137,6 +142,7 @@ namespace Async_Await_Demo
         }
 
 
+        //
         private static WebSiteDataModel DownloadWebSite(string websiteURL)
         {
             // Initial output web site data
@@ -150,11 +156,10 @@ namespace Async_Await_Demo
             output.WebsiteData = client.DownloadString(websiteURL);
 
             return output;
-
         }
 
 
-
+        // use await for each website download action
         private static async Task<WebSiteDataModel> DownloadWebSiteAsync(string websiteURL)
         {
             // Initial output web site data

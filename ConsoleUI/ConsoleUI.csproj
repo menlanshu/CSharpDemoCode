@@ -45,6 +45,7 @@
   <ItemGroup>
     <Compile Include="AbstractDemo\AbstractDemoClass.cs" />
     <Compile Include="Async_Await_Demo\Async_Await_DemoClass.cs" />
+    <Compile Include="Csharp8Demo\CsharpDemoClass.cs" />
     <Compile Include="DelegatesDemo\DelegatesDemoClass.cs" />
     <Compile Include="Eventsdemo\EventsDemoClass.cs" />
     <Compile Include="GenericsDemo\GenericDemoClass.cs" />
