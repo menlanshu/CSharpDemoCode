@@ -7,6 +7,14 @@ namespace AbstractDemo
     // when no instance can be created as DataAccess, then it shoudl be a virtual class
     // No data access can just be data access
     // it should be sql server data access or sqlite data access or other kind of data access
+
+
+    // abstract vs interface
+    // interface only can contain property, function without implementation
+    // but abstract class can have virtua method with implementation
+    // and all can have normal method with implmentation
+    // abstract class for A is B condition
+    // interface can only focuse on function. A has B, A has C, then you can use A : B, C to implment interface
     abstract class DataAccess
     {
         public virtual void LoadConnectionString()
