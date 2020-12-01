@@ -13,7 +13,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DelegatesDemoWinformUI", "D
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Async_Await_Demo", "Async_Await_Demo\Async_Await_Demo.csproj", "{ED0FFD70-4E71-42E7-8AD7-3F6DB99C6688}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Csharp8Demo", "Csharp8Demo\Csharp8Demo.csproj", "{AAC48EEC-12C6-4A83-B092-288034E1BE40}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Csharp8Demo", "Csharp8Demo\Csharp8Demo.csproj", "{AAC48EEC-12C6-4A83-B092-288034E1BE40}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RandomDemo", "RandomDemo\RandomDemo.csproj", "{CECC9CD2-2656-4E95-8932-12CD6C74DD11}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,6 +47,10 @@ Global
 		{AAC48EEC-12C6-4A83-B092-288034E1BE40}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AAC48EEC-12C6-4A83-B092-288034E1BE40}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AAC48EEC-12C6-4A83-B092-288034E1BE40}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CECC9CD2-2656-4E95-8932-12CD6C74DD11}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CECC9CD2-2656-4E95-8932-12CD6C74DD11}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CECC9CD2-2656-4E95-8932-12CD6C74DD11}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CECC9CD2-2656-4E95-8932-12CD6C74DD11}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
