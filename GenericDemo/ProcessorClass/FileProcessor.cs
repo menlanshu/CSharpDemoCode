@@ -8,6 +8,9 @@ namespace GenericDemo.ProcessorClass
 {
     public static class FileProcessor
     {
+        // if you want to have T alway has a Id, I think you need declare a class or interface which has a ID
+        // let me have a try
+
         public static List<T> ReadFromFile<T>(string filePath) where T: class, new()
         {
             List<T> output = new List<T>();
