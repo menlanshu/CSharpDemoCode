@@ -1,0 +1,14 @@
+﻿## initial application
+Initial part of subtotal
+Populate some test data for product model with itemname and price
+ShoppingCart class to hold a bench of product models
+Create a delegate can do SubTotalAlert, pass in a function to shoppingcart class for alert
+
+## Optimze code for if/else
+How to optimize code for if/else?
+- use Func? move if/else out from class?
+- if this better? This function should be in shopping class or not?
+- We have a product/shoppting cart library. Then we can pass in differnt delegate to make class do different actions
+- for winform show messagebox, for console show console, we can have a try.
+
+Add an action to tell user we're in discounting
