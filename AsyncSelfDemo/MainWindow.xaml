@@ -1,0 +1,27 @@
+﻿<Window x:Class="AsyncSelfDemo.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:AsyncSelfDemo"
+        mc:Ignorable="d" FontSize="20"
+        Title="MainWindow" Height="800" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <Button Grid.Row="0" Margin="5" x:Name="btnNormalSync" Content="Normal Sync Button" Click="btnNormalSync_Click"/>
+        <Button Grid.Row="1" Margin="5" x:Name="btnNormalAsync" Content="Normal Async Button" Click="btnNormalAsync_Click"/>
+        <Button Grid.Row="2" Margin="5" x:Name="btnParallelAsync" Content="Parallel Async Button" Click="btnParallelAsync_Click"/>
+        <Button Grid.Row="3" Margin="5" x:Name="btnCancelButton" Content="Cancel Button" Click="btnCancelButton_Click"/>
+        <ProgressBar Grid.Row="4" Margin="5" Height="30" x:Name="pbProcessBar"/>
+        <TextBox Grid.Row="5" Margin="5" x:Name="txWindow"/>
+
+    </Grid>
+</Window>

@@ -7,6 +7,9 @@ namespace DelegateSelfDemo_Console
     {
         static void Main(string[] args)
         {
+            // just some temprary test for intermediate interfactive command window!!
+            //Foo testFoo = new Foo();
+            //testFoo.Add(1,2);
             ShoppingCart shoppingCart = new ShoppingCart();
             shoppingCart.MockCartData();
 
@@ -17,6 +20,16 @@ namespace DelegateSelfDemo_Console
             Console.WriteLine($"You should pay {subTotal:C1} for all those products");
             Console.WriteLine(String.Format("You should pay {0:C2}", subTotal));
             Console.WriteLine(String.Format("You should pay {0:$#,##0.00}", subTotal));
+        }
+
+        public class Foo
+        {
+            public int Add(int a, int b)
+            {
+                int output = 0;
+                output = a + b;
+                return output;
+            }
         }
     }
 }
