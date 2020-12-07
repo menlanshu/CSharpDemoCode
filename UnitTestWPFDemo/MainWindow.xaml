@@ -1,0 +1,125 @@
+﻿<Window x:Class="UnitTestWPFDemo.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:UnitTestWPFDemo"
+        mc:Ignorable="d" FontSize="20"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="0.5*" />
+            <ColumnDefinition Width="0.5*" />
+        </Grid.ColumnDefinitions>
+
+        <Grid Grid.Row="0" Grid.Column="0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="40"/>
+                <RowDefinition Height="40"/>
+                <RowDefinition Height="40"/>
+                <RowDefinition Height="40"/>
+                <RowDefinition Height="40"/>
+                <RowDefinition Height="40"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <TextBlock Grid.Row="0" Grid.Column="0" 
+                       VerticalAlignment="Center" 
+                       HorizontalAlignment="Center"
+                       Text="First Number" />
+            <TextBox Grid.Row="0" Grid.Column="1"
+                       Margin="5"
+                     Text="{Binding ValueX, UpdateSourceTrigger=PropertyChanged}"/>
+
+            <TextBlock Grid.Row="1" Grid.Column="0" 
+                       VerticalAlignment="Center" 
+                       HorizontalAlignment="Center"
+                       Text="Second Number" />
+            <TextBox Grid.Row="1" Grid.Column="1"
+                       Margin="5"
+                     Text="{Binding ValueY, UpdateSourceTrigger=PropertyChanged}"/>
+
+
+            <Button x:Name="btnAdd" Grid.Row="2" Grid.Column="0"
+                    Content="Add"
+                    Margin="10,0,10,0"
+                    Command="{Binding AddCommand}"
+                    />
+            <Button x:Name="btnSubstract" Grid.Row="3" Grid.Column="0"
+                    Content="Substract"
+                    Margin="10,0,10,0"
+                    Command="{Binding SubstractCommand}"
+                    />
+            <Button x:Name="btnMultiply" Grid.Row="4" Grid.Column="0"
+                    Content="Multiply"
+                    Margin="10,0,10,0"
+                    Command="{Binding MultiplyCommand}"
+                    />
+            <Button x:Name="btnDivide" Grid.Row="5" Grid.Column="0"
+                    Content="Divide"
+                    Margin="10,0,10,0"
+                    Command="{Binding DivideCommand}"
+                    />
+
+            <TextBlock Grid.Row="4" Grid.Column="1" 
+                       VerticalAlignment="Center" 
+                       Margin="10,0,0,0"
+                       Text="Result" />
+            <TextBox Grid.Row="5" Grid.Column="1"
+                     Margin="5"
+                     Text="{Binding CalculateResult, UpdateSourceTrigger=PropertyChanged}"/>
+
+        </Grid>
+        <Grid Grid.Row="0" Grid.Column="1">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="40"/>
+                <RowDefinition Height="40"/>
+                <RowDefinition Height="40"/>
+                <RowDefinition Height="40"/>
+                <RowDefinition Height="40"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <TextBlock Grid.Row="1" Grid.Column="0" 
+                       VerticalAlignment="Center" 
+                       HorizontalAlignment="Center"
+                       Text="Users" />
+            <ComboBox Grid.Row="1" Grid.Column="1"
+                       Margin="5"
+                      ItemsSource="{Binding People}"
+                      SelectedItem="{Binding SelectedPerson}"
+                      DisplayMemberPath="FullName"/>
+
+            <TextBlock Grid.Row="2" Grid.Column="0" 
+                       VerticalAlignment="Center" 
+                       HorizontalAlignment="Center"
+                       Text="First Name" />
+            <TextBox Grid.Row="2" Grid.Column="1"
+                       Margin="5"
+                     Text="{Binding FirstName, UpdateSourceTrigger=PropertyChanged}"
+                     />
+            <TextBlock Grid.Row="3" Grid.Column="0" 
+                       VerticalAlignment="Center" 
+                       HorizontalAlignment="Center"
+                       Text="Last Name" />
+            <TextBox Grid.Row="3" Grid.Column="1"
+                       Margin="5"
+                     Text="{Binding LastName, UpdateSourceTrigger=PropertyChanged}"
+                     />
+
+            <Button x:Name="btnAddPerson" Grid.Row="4" Grid.ColumnSpan="2"
+                    Content="Add Person"
+                    Margin="80,5,80,0"
+                    Command="{Binding PersonAddCommand}"
+                    />
+
+        </Grid>
+    </Grid>
+</Window>
