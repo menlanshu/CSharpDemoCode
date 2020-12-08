@@ -93,8 +93,8 @@
                        Text="Users" />
             <ComboBox Grid.Row="1" Grid.Column="1"
                        Margin="5"
-                      ItemsSource="{Binding People}"
-                      SelectedItem="{Binding SelectedPerson}"
+                      ItemsSource="{Binding People, UpdateSourceTrigger=PropertyChanged}"
+                      SelectedItem="{Binding SelectedPerson, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}"
                       DisplayMemberPath="FullName"/>
 
             <TextBlock Grid.Row="2" Grid.Column="0" 

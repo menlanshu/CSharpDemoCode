@@ -31,11 +31,11 @@ namespace UnitTestWPFDemo.ViewModel
         }
 
         public event PropertyChangedEventHandler PropertyChanged;
-        protected void NotifyPropertyChanged(String info)
+        protected void NotifyPropertyChanged(string info)
         {
             if (PropertyChanged != null)
             {
-                PropertyChanged(this, new PropertyChangedEventArgs(info));
+               PropertyChanged(this, new PropertyChangedEventArgs(info));
             }
         }
 
@@ -54,9 +54,9 @@ namespace UnitTestWPFDemo.ViewModel
         }
 
 
-        private List<IPersonModel> _people;
+        private ObservableCollection<IPersonModel> _people;
 
-        public List<IPersonModel> People
+        public ObservableCollection<IPersonModel> People
         {
             get { return _people; }
             set
@@ -140,7 +140,7 @@ namespace UnitTestWPFDemo.ViewModel
             DivideCommand = new CalculateCommand(this, CalcType.Divide);
             PersonAddCommand = new AddPersonCommand(this);
 
-            People = _dataAccess.GetAllPeople();
+            People = new ObservableCollection<IPersonModel>(_dataAccess.GetAllPeople());
         }
     }
 }

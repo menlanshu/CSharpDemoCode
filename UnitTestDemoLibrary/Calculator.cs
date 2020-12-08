@@ -20,7 +20,7 @@ namespace UnitTestDemoLibrary
         }
         public double Divide(double x, double y)
         {
-            return x / y;
+            return y == 0 ? 0 : x / y;
         }
     }
 }

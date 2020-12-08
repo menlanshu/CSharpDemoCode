@@ -14,14 +14,28 @@ namespace UnitTestDemoLibrary
         {
             List<string> lines = new List<string>();
             List<IPersonModel> people = GetAllPeople();
-            people.Add(person);
+            AddNewPersonToList(people, person);
 
-            foreach(var user in people)
+            lines = ConvertModelsToCSV(people);
+
+            File.WriteAllLines(personTextFile, lines);
+        }
+
+        private void AddNewPersonToList(List<IPersonModel> people, IPersonModel newPerson)
+        {
+            people.Add(newPerson);
+        }
+
+        public List<string> ConvertModelsToCSV(List<IPersonModel> people)
+        {
+            List<string> lines = new List<string>();
+
+            foreach (var user in people)
             {
                 lines.Add($"{user.FirstName},{user.LastName}");
             }
 
-            File.WriteAllLines(personTextFile, lines);
+            return lines;
         }
 
         public List<IPersonModel> GetAllPeople()

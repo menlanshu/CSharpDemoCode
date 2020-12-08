@@ -11,7 +11,7 @@ namespace UnitTestDemoLibrary
         {
             if(file.Length < 10)
             {
-                throw new FileNotFoundException();
+                throw new ArgumentException("File length is less than 10 ", "file");
             }
 
             return "The file was correctly loaded.";

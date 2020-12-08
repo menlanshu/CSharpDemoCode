@@ -25,13 +25,14 @@ namespace UnitTestWPFDemo.ViewModel
 
         public void Execute(object parameter)
         {
-            _viewModel.MyDataAccess.AddNewPerson(
-                new PersonModel
-                {
-                    FirstName = _viewModel.FirstName,
-                    LastName = _viewModel.LastName
-                }
-                );
+            var newPerson = new PersonModel
+            {
+                FirstName = _viewModel.FirstName,
+                LastName = _viewModel.LastName
+            };
+            _viewModel.MyDataAccess.AddNewPerson(newPerson);
+            _viewModel.People.Add(newPerson);
+            _viewModel.SelectedPerson = newPerson;
             MessageBox.Show("Add Success");
         }
     }
